@@ -1,7 +1,7 @@
 var places = [
 
 {
-"Name": 'Castle of Good Hope',
+"name": 'Castle of Good Hope',
 "address": "Darling St & Buitenkant St, Foreshore, Cape Town, 8001, South Africa",
 "today’s hours": "9:30am-4pm",
 "recommended hours": "1-2pm",
@@ -15,7 +15,7 @@ var places = [
 },
 
 {
-"Name": 'Bo-Kaap Neighborhood',
+"name": 'Bo-Kaap Neighborhood',
 "address": "Bo-Kaap, Schotsche Kloof, Cape Town, South Africa",
 "today’s hours": "All Day",
 "recommended hours": "Afternoon",
@@ -29,7 +29,7 @@ var places = [
 },
 
 {
-"Name": 'Green Point Park',
+"name": 'Green Point Park',
 "address": "1 Fritz Sonnenberg Rd, Green Point, Cape Town, 8051, South Africa",
 "today’s hours": "7am-7pm",
 "recommended hours": "2-3pm",
@@ -43,7 +43,7 @@ var places = [
 },
 
 {
-"Name": 'Greenmarket Square',
+"name": 'Greenmarket Square',
 "address": "Burg St & Longmarket Street, Cape Town City Centre, Cape Town, 8000, South Africa",
 "today’s hours": "9am-5pm",
 "recommended hours": "12-1pm",
@@ -57,7 +57,7 @@ var places = [
 },
 
 {
-"Name": 'St. George\'s Cathedral',
+"name": 'St. George\'s Cathedral',
 "address": "5 Wale St, Cape Town, 8001, South Africa",
 "today’s hours": "9am-1pm",
 "recommended hours": "9am-10am",
@@ -71,7 +71,7 @@ var places = [
 },
 
 {
-"Name": 'District Six Museum',
+"name": 'District Six Museum',
 "address": "25A Albertus St & Buitenkant Street, Zonnebloem, Cape Town, 8000, South Africa",
 "today’s hours": "9am-4pm, closed Sunday",
 "recommended hours": "11am-12pm",
@@ -85,7 +85,7 @@ var places = [
 },
 
 {
-"Name": 'Two Oceans Aquarium',
+"name": 'Two Oceans Aquarium',
 "address": "Dock Rd, V & A Waterfront, Cape Town, 8002, South Africa",
 "today’s hours": "9:30am-6pm",
 "recommended hours": "12-1pm",
@@ -99,7 +99,7 @@ var places = [
 },
 
 {
-"Name": 'Chapman\'s Peak Drive',
+"name": 'Chapman\'s Peak Drive',
 "address": "N/A",
 "today’s hours": "N/A",
 "recommended hours": "N/A",
@@ -113,7 +113,7 @@ var places = [
 },
 
 {
-"Name": 'Boulder Beach',
+"name": 'Boulder Beach',
 "address": "3 Kleintuin Rd, Simon's Town, Cape Town, 7995, South Africa",
 "today’s hours": "8am-5pm",
 "recommended hours": "11am-12pm",
@@ -127,7 +127,7 @@ var places = [
 },
 
 {
-"Name": 'Cape of Good Hope',
+"name": 'Cape of Good Hope',
 "address": "Cape Point Rd, Cape Town, 8001, South Africa",
 "today’s hours": "6am-6pm",
 "recommended hours": "3-4pm",
@@ -141,7 +141,7 @@ var places = [
 },
 
 {
-"Name": 'Hout Bay Market/Bay Harbour Market',
+"name": 'Hout Bay Market/Bay Harbour Market',
 "address": "31 Harbour Rd, Hout Bay, Cape Town, 7872, South Africa",
 "today’s hours": "9:30am-4pm on Saturday and Sunday, 5-9pm on Friday",
 "recommended hours": "1-3pm",
@@ -155,7 +155,7 @@ var places = [
 },
 
 {
-"Name": 'Simon\'s Town',
+"name": 'Simon\'s Town',
 "address": "N/A",
 "today’s hours": "N/A",
 "recommended hours": "N/A",
@@ -169,7 +169,7 @@ var places = [
 },
 
 {
-"Name": 'Muizenberg',
+"name": 'Muizenberg',
 "address": "N/A",
 "today’s hours": "N/A",
 "recommended hours": "N/A",
@@ -183,7 +183,7 @@ var places = [
 },
 
 {
-"Name": 'Kirstenbosch Botanical Gardens',
+"name": 'Kirstenbosch Botanical Gardens',
 "address": "Rhodes Dr, Newlands, Cape Town, 7735, South Africa",
 "today’s hours": "N/A",
 "recommended hours": "3-4pm",
@@ -197,7 +197,7 @@ var places = [
 },
 
 {
-"Name": 'University of Cape Town',
+"name": 'University of Cape Town',
 "address": "Rondebosch, Cape Town, 7700, South Africa",
 "today’s hours": "N/A",
 "recommended hours": "N/A",
@@ -211,7 +211,7 @@ var places = [
 },
 
 {
-"Name": 'World of Birds',
+"name": 'World of Birds',
 "address": "4914 Valley Rd, Hout Bay, Cape Town, 7806, South Africa",
 "today’s hours": "9am-5pm",
 "recommended hours": "1-2pm",
@@ -225,7 +225,7 @@ var places = [
 },
 
 {
-"Name": 'Helderberg Nature Reserve',
+"name": 'Helderberg Nature Reserve',
 "address": "Helderberg Nature Reserve, Cape Town, 7135, South Africa",
 "today’s hours": "7:30am-5:30pm",
 "recommended hours": "12-2pm",
@@ -239,7 +239,7 @@ var places = [
 },
 
 {
-"Name": 'Rietvlei Wetland Reserve',
+"name": 'Rietvlei Wetland Reserve',
 "address": "8 Sandpiper Cres, Flamingo Vlei, Cape Town, 7441, South Africa",
 "today’s hours": "9am-4:30pm Monday through Friday",
 "recommended hours": "12-2pm",
@@ -253,7 +253,7 @@ var places = [
 },
 
 {
-"Name": 'Company\'s Garden',
+"name": 'Company\'s Garden',
 "address": "19 Queen Victoria St, CBD, Cape Town, 8000, South Africa",
 "today’s hours": "7am-7pm",
 "recommended hours": "12-2pm",
@@ -267,7 +267,7 @@ var places = [
 },
 
 {
-"Name": 'Grand West Casino',
+"name": 'Grand West Casino',
 "address": "1 Jakes Gerwel Drive, Goodwood, Cape Town, 7460, South Africa",
 "today’s hours": "open 24 hours",
 "recommended hours": "8-9pm",
@@ -281,7 +281,7 @@ var places = [
 },
 
 {
-"Name": 'Clifton Beach',
+"name": 'Clifton Beach',
 "address": "N/A",
 "today’s hours": "N/A",
 "recommended hours": "N/A",
@@ -295,7 +295,7 @@ var places = [
 },
 
 {
-"Name": 'Glen Beach',
+"name": 'Glen Beach',
 "address": "N/A",
 "today’s hours": "N/A",
 "recommended hours": "N/A",

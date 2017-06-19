@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import SearchBar from './SearchBar.jsx';
+import SearchBar from '../SearchBar';
 
 /*
 This is the layout component. It's displayed by the top-level Route

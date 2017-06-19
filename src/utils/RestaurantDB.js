@@ -24,7 +24,7 @@ var restaurants = [
     "website": "http://www.goldrestaurant.co.za",
     "contact": "270214214653",
     "description": "African 14-course menu in a safari lodge setting with courtyard, live drumming and Mali puppets.",
-    "tags":[ "dinner", "meal", "drinks", "music"],
+    "tags":[ "dinner", "meal", "drinks", "music", 'gold'],
     "uberTime": "22 min",
     "imageUrl": "http://feastafrica.com/wp-content/uploads/2016/08/Gold-Menu-Items.png"
   },
@@ -38,7 +38,7 @@ var restaurants = [
     "website": "http://www.kloofstreethouse.co.za",
     "contact": "27 21 423 4413",
     "description": "Richly furnished dining rooms in Victorian house with bar and leafy gardens, for eclectic cuisine",
-    "tags":["dinner", "meal", "drinks", "Kloof Street"],
+    "tags":["dinner", "meal", "drinks", "Kloof Street", 'Kloof', 'House'],
     "uberTime": "13 min",
     "imageUrl": " https://d2v7cp6zd42ged.cloudfront.net/restaurantpictures/kloof_street_house_451812_std.png"
     },
@@ -52,7 +52,7 @@ var restaurants = [
     "website": "http://www.waterfront.co.za/Eat/w/willoughby-and-co",
     "contact": "27214186115",
     "description": "Popular shopping-mall restaurant turning out creative sushi preparations & other Japanese dishes.",
-    "tags":["meal", "dinner", "lunch", "sushi", "Waterfront"],
+    "tags":["meal", "dinner", "lunch", "sushi", "Waterfront", 'Willoughby', 'Co'],
     "uberTime": "23 min",
     "imageUrl": "https://www.simonseeks.com/cache/image/food_drink/172275/single_post/picture1-26496.png"
     },

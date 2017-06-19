@@ -6,6 +6,10 @@ import './index.css';
 
 import restaurants from '../../utils/RestaurantDB.js';
 import places from '../../utils/placesdatatemplate.js';
+import activities from '../../utils/ActivitiesDataTemplate.js';
+import bars from '../../utils/BarsDataTemplate.js';
+import clubs from '../../utils/ClubsDataTemplate.js';
+import events from '../../utils/EventsDataTemplate.js';
 
 
 class RestaurantDatabase extends React.Component {
@@ -13,15 +17,21 @@ class RestaurantDatabase extends React.Component {
     super(props);
     this.state = {
       RestaurantArray : restaurants,
+      PlacesArray: places,
+      ActivitiesArray: activities,
+      BarsArray: bars,
+      ClubsArray: clubs,
+      EventsArray: events,
       resultArray: []
     }
   }
 
-  searchAlgorithim = (searchTerm) => {
-    //initalize an empty array to take valid search matches
-    var resultArray = [];
+  searchAlorithimStateChange = (arrayToLoop, searchTerm) => {
+    //Allows us to keep old finds in the resultArray
+    var resultArray = this.state.resultArray;
+//  var resultArray = [];
 
-    this.state.RestaurantArray.forEach((restaurant) => {
+    arrayToLoop.forEach((restaurant) => {
       //Is it the restaurant name -- case insensitive
       if (searchTerm.toUpperCase() == restaurant.name.toUpperCase()) {
         resultArray.push(restaurant);
@@ -41,10 +51,20 @@ class RestaurantDatabase extends React.Component {
     }
     else {
       this.setState (
-        {resultArray: resultArray}
+        {resultArray: resultArray},
+        console.log(resultArray)
       )
     //  return resultArray;
     }
+  }
+
+  searchAlgorithim = (searchTerm) => {
+    this.searchAlorithimStateChange(this.state.RestaurantArray, searchTerm);
+    this.searchAlorithimStateChange(this.state.PlacesArray, searchTerm);
+    this.searchAlorithimStateChange(this.state.ActivitiesArray, searchTerm);
+    this.searchAlorithimStateChange(this.state.BarsArray, searchTerm);
+    this.searchAlorithimStateChange(this.state.ClubsArray, searchTerm);
+    this.searchAlorithimStateChange(this.state.EventsArray, searchTerm);
   }
 
   componentWillMount = () => {
@@ -52,7 +72,10 @@ class RestaurantDatabase extends React.Component {
   }
 
   componentWillReceiveProps = (nextProps) => {
-    this.searchAlgorithim(nextProps.params.searchQuery);
+    this.setState (
+      {resultArray: []},
+        this.searchAlgorithim(nextProps.params.searchQuery)
+    )
   }
 
 /*

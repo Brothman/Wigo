@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import App from './components/App.jsx';
+import App from './components/App';
 import MainPage from './containers/MainPage.js';
 import SearchPage from './containers/SearchPage.js';
 import VenuePage from './containers/VenuePage.js';
