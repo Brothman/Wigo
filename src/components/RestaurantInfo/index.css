@@ -1,0 +1,20 @@
+.Info-Container {
+  color: white;
+  min-width: 250px;
+  font-family: 'Raleway';
+}
+
+.venue-header {
+  color: #E7CC8F;
+  font-size: 60px;
+  font-family: 'Lobster';
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+
+.text-title {
+  font-size: 24px;
+  color: #E7CC8F;
+  font-family: 'Raleway';
+}

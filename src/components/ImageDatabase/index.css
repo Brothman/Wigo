@@ -1,0 +1,7 @@
+.tag-container {
+  display: flex;
+  background-image: url("../../Images/Museum.png");;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}

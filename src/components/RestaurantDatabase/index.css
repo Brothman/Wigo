@@ -1,0 +1,15 @@
+.restaurant-container {
+  display: flex;
+}
+
+.result-image-container {
+  padding-top: 20px;
+  height: 425px;
+  width: 425px;
+}
+
+
+.image-info-container {
+  min-width: 425px;
+  margin-left: 75px;
+}

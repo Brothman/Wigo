@@ -1,0 +1,23 @@
+.website-link {
+  color: inherit;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.website-link:hover, .website-link:active {
+  box-shadow: 0 0 10px 10px #595959;
+  border-radius: 50%;
+}
+
+.Info-Container {
+  padding-top: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.text {
+  max-height: 5px;
+  font-weight: 100;
+  opacity: 0.3;
+}

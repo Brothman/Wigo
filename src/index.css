@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --breakpoint-phone: 320px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1224px;
+  --breakpoint-largescreen: 1824px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
+
+img {
+  max-width: 100%;
+}
+
+.main-app {
+  background-color: #48120E;
+}
+
+.orange-stylized {
+  text-align: center;
+  background-color: #E7CC8F;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.body-container {
+  display: flex;
+}
+
+.body {
+  display:flex;
+}
+
+.searchbar {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+}
+
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+}
+@media all and (min-width: 768px) {
+  .main-header {
+    flex-direction: row;
+  }
+}
+
+.main-header .header-1 {
+  font-size: 22px;
+}
+
+
+.main-header .searchbar-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .main-header .searchbar-container {
+    flex-direction: row;
+  }
+}

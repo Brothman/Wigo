@@ -1,0 +1,55 @@
+.tag {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+
+.search-image-container {
+  height: 250px;
+  width: 250px;
+  margin-left: 20px;
+}
+
+.search-restaurant-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 615px;
+  overflow-y: scroll;
+}
+
+.search-text {
+  color: white;
+  font-family: 'Raleway';
+}
+
+.search-text-header {
+  color: #E7CC8F;
+  font-size: 38px;
+  font-weight: 900;
+  font-family: 'Lobster';
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+.search-text-container {
+    max-width: 350px;
+    margin-left: 20px;
+}
+
+.search-image-info-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  min-height: 250px;
+  min-width: 250px;
+}
+
+.search-image-container {
+  box-shadow:none;
+}
+
+.search-image-container:hover, .search-image-container:active {
+  box-shadow: 0 0 10px 10px #595959;
+  border-radius: 50%;
+}
