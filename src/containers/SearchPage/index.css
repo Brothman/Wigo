@@ -1,0 +1,18 @@
+@media all and (max-width: 415px) {
+
+  .body-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 415px) {
+
+  .logo-container{
+    height: 350px;
+  }
+
+  .logo{
+    height: 350px;
+  }
+}

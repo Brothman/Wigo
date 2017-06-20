@@ -3,3 +3,9 @@
   max-height: 400px;
   padding-top: 100px;
 }
+@media all and (max-width: 415px) {
+  .image-gallery-content {
+    margin: auto;
+    padding-top: 0px;
+  }
+}
