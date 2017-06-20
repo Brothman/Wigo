@@ -19,51 +19,15 @@
   font-family: 'Lobster';
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.header-about {
   font-size: 56px;
   color: #3E3E3B;
 }
 
-@media all and (max-width: 415px) {
-  .header-about {
-    margin: 10px;
-    font-size: 40px;
-  }
-}
-
-.header-live {
+.header-live, .header-start {
   font-size: 40px;
-}
-
-@media all and (max-width: 415px) {
-  .header-live {
-    margin: 0px;
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-}
-
-.text-live {
-  font-family: 'Raleway';
-  color: #595959;
-}
-
-@media all and (max-width: 415px) {
-  .text-live {
-    margin: 5px;
-    font-size: 15px;
-  }
-}
-
-.header-start {
-  font-size: 40px;
-}
-
-@media all and (max-width: 415px) {
-  .header-start {
-    margin: 0px;
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
 }
 
 .arrow {
@@ -71,28 +35,7 @@
   color: #48120E;
 }
 
-.ordered-text-live {
-  font-family: 'Raleway';
-  color: #595959;
-}
-
-@media all and (max-width: 415px) {
-  .ordered-text-live {
-    margin: 20px;
-    font-size: 15px;
-    padding-left: 0px;
-    margin-bottom: 0px;
-  }
-}
-
-@media all and (max-width: 415px) {
-  .about-description {
-    margin: 10px;
-    font-size: 20px;
-  }
-}
-
-.header-live, .header-start {
+.header-live, .text-live, .ordered-text-live, .header-start {
   font-family: 'Raleway';
   color: #595959;
 }

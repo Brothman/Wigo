@@ -2,31 +2,12 @@
   display: flex;
   max-width: 600px;
   flex-wrap: wrap;
-  justify-content: center;
 /*  background-image: url("../../Images/Museum.png");;*/
-}
-
-@media all and (max-width: 415px) {
-  .tags-container {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 }
 
 .tag-container {
   height: 250px;
   width: 250px;
-}
-
-@media all and (max-width: 415px) {
-  .tag-container {
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
 }
 
 .tag {
