@@ -36,6 +36,14 @@ img {
   display: flex;
 }
 
+
+@media all and (max-width: 415px) {
+  .body-container {
+    flex-direction: column;
+  }
+}
+
+
 .body {
   display:flex;
 }

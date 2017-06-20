@@ -5,12 +5,6 @@
   margin-right: 0;
 }
 
-@media all and (max-width: 415px) {
-  .about-image {
-    margin-left: 10px;
-  }
-}
-
 .test {
   border-radius: 50%;
   position: relative;
