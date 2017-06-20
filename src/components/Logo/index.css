@@ -3,6 +3,14 @@
   min-width: 275px;
 }
 
+@media all and (max-width: 415px) {
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    height:225px
+  }
+}
+
 .logo {
   height: 100%;
 }
@@ -18,5 +26,4 @@
     height: 225px;
     display: flex;
     justify-content: center;
-  }
-}
+
