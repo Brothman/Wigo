@@ -26,7 +26,7 @@ img {
 .orange-stylized {
   text-align: center;
   /*background-color: #E7CC8F;*/
-  background-color: #F8F3E6; 
+  background-color: #F8F3E6;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -34,6 +34,13 @@ img {
 
 .body-container {
   display: flex;
+}
+
+
+@media all and (max-width: 415px) {
+  .body-container {
+    flex-direction: column;
+  }
 }
 
 .body {
