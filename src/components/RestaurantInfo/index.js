@@ -12,8 +12,11 @@ class RestaurantInfo extends React.Component {
   render () {
     const {info} = this.props
     return (
-      <div className='Info-Container'>
+        <div className='Info-Container'>
+          <div className='Info-header'>
         <h2 className='venue-header'>{info.name}</h2>
+          </div>
+          <div className='Info-text'>
         <p> <span className='text-title'>Uber Time: </span> {info.uberTime}</p>
         <p> <span className='text-title'>Address: </span>{info.address}</p>
         <p> <span className='text-title'>Today's Hours: </span> {info.todaysHours}</p>
@@ -21,6 +24,7 @@ class RestaurantInfo extends React.Component {
         <p> <span className='text-title'>Price: </span> {info.price} </p>
         <p> <span className='text-title'>Description: </span>{info.description}</p>
       </div>
+    </div>
     )
   }
 }
