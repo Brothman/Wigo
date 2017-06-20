@@ -10,6 +10,7 @@ import activities from '../../utils/ActivitiesDataTemplate.js';
 import bars from '../../utils/BarsDataTemplate.js';
 import clubs from '../../utils/ClubsDataTemplate.js';
 import events from '../../utils/EventsDataTemplate.js';
+import fitness from '../../utils/Fitness.js';
 
 
 class RestaurantDatabase extends React.Component {
@@ -22,6 +23,7 @@ class RestaurantDatabase extends React.Component {
       BarsArray: bars,
       ClubsArray: clubs,
       EventsArray: events,
+      FitnessArray: fitness,
       resultArray: []
     }
   }
@@ -79,6 +81,7 @@ class RestaurantDatabase extends React.Component {
     this.searchAlorithimStateChange(this.state.BarsArray, searchTerm);
     this.searchAlorithimStateChange(this.state.ClubsArray, searchTerm);
     this.searchAlorithimStateChange(this.state.EventsArray, searchTerm);
+    this.searchAlorithimStateChange(this.state.FitnessArray, searchTerm);
     this.shuffleArray();
   //  console.log(this.state.EventsArray);
   }
