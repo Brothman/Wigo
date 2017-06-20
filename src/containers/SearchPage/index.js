@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../components/Logo';
 import RestaurantSearchDatabase from '../../components/RestaurantSearchDatabase';
+
 import './index.css';
 
 class SearchPage extends React.Component {
