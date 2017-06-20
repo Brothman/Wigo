@@ -52,11 +52,25 @@ class RestaurantDatabase extends React.Component {
     else {
       this.setState (
         {resultArray: resultArray},
-        console.log(resultArray)
+    //    console.log(resultArray)
       )
     //  return resultArray;
     }
   }
+
+  //Use the Durstenfeld shuffle to randomize search results (Appear to have an Intelligent Database)
+   shuffleArray = () => {
+     var tempArray = this.state.resultArray;
+     //shuffle the result list
+    for (var i = tempArray.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = tempArray[i];
+        tempArray[i] = tempArray[j];
+        tempArray[j] = temp;
+    }
+    //set the new state as the suffled results
+    this.setState ({resultArray: tempArray});
+}
 
   searchAlgorithim = (searchTerm) => {
     this.searchAlorithimStateChange(this.state.RestaurantArray, searchTerm);
@@ -65,6 +79,8 @@ class RestaurantDatabase extends React.Component {
     this.searchAlorithimStateChange(this.state.BarsArray, searchTerm);
     this.searchAlorithimStateChange(this.state.ClubsArray, searchTerm);
     this.searchAlorithimStateChange(this.state.EventsArray, searchTerm);
+    this.shuffleArray();
+  //  console.log(this.state.EventsArray);
   }
 
   componentWillMount = () => {
@@ -72,10 +88,10 @@ class RestaurantDatabase extends React.Component {
   }
 
   componentWillReceiveProps = (nextProps) => {
-    this.setState (
-      {resultArray: []},
-        this.searchAlgorithim(nextProps.params.searchQuery)
-    )
+    //call searchAlgorithim once resultArray has been reset for new search
+    this.setState ({resultArray: []}, () => {
+      this.searchAlgorithim(nextProps.params.searchQuery)})
+
   }
 
 /*

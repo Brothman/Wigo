@@ -1,0 +1,45 @@
+.about-container-with-image {
+  background-color: #F8F3E6;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-container-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*justify-content: center;*/
+}
+
+.ordered-text-live {
+  list-style-position: inside;
+}
+
+.header-about {
+  font-family: 'Lobster';
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.header-about {
+  font-size: 56px;
+  color: #3E3E3B;
+}
+
+.header-live, .header-start {
+  font-size: 40px;
+}
+
+.arrow {
+  font-size: 40px;
+  color: #48120E;
+}
+
+.header-live, .text-live, .ordered-text-live, .header-start {
+  font-family: 'Raleway';
+  color: #595959;
+}
+
+.header-start {
+  margin-top: 20px;
+}

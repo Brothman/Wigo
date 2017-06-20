@@ -4,6 +4,8 @@ body {
   font-family: sans-serif;
 }
 
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 :root {
   --breakpoint-phone: 320px;
   --breakpoint-tablet: 768px;
@@ -23,7 +25,8 @@ img {
 
 .orange-stylized {
   text-align: center;
-  background-color: #E7CC8F;
+  /*background-color: #E7CC8F;*/
+  background-color: #F8F3E6; 
   padding-top: 5px;
   padding-bottom: 5px;
 }

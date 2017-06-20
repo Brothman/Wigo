@@ -10,7 +10,7 @@ class RestaurantBoringInfo extends React.Component {
     const {info} = this.props
     return (
       <div className='Info-Container'>
-         <p className='text'>Website: <a className='website-link' href={info.website}> {info.website}</a></p>
+         <p className='text'>Website: <a className='website-link' href={info.website} target='_blank'> {info.website}</a></p>
         <p className='text'>Phone: {info.contact}</p>
       </div>
     )

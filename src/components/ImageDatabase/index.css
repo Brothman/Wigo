@@ -1,7 +1,17 @@
-.tag-container {
+.tags-container {
   display: flex;
-  background-image: url("../../Images/Museum.png");;
-  border-radius: 50%;
+  max-width: 600px;
+  flex-wrap: wrap;
+/*  background-image: url("../../Images/Museum.png");;*/
+}
+
+.tag-container {
   height: 250px;
   width: 250px;
+}
+
+.tag {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
 }

@@ -1,21 +1,28 @@
 import React from 'react'
-//import Images from '../Images';
+import Images from '../Images';
 import Museum from '../../Images/Museum.png';
+import Bars from '../../Images/Museum.png';
+import Food from '../../Images/Food.png';
+import Outdoors from '../../Images/Outdoors.png';
 import './index.css';
 
 class ImageDatabase extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
-      images : [Museum]
+      images : [Museum, Bars, Food, Outdoors]
     }
   }
 
   render () {
     return (
-      <div className="tag-container" >
-
+      <div className="tags-container" >
+        {this.state.images.map(function(image, i) {
+         return (
+           <div className='tag-container'>
+              <Images key={i} source={image}/>
+           </div>
+         )})}
       </div>
     )}
 }

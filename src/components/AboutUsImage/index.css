@@ -1,0 +1,11 @@
+ .about-image {
+  border-radius: 50%;
+  border-left: 10px solid black;
+  width: 500px;
+  margin-right: 0;
+}
+
+.test {
+  border-radius: 50%;
+  position: relative;
+}

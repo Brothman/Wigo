@@ -1,9 +1,10 @@
 import React from 'react';
-import Logo from '../components/Logo';
-import ImageDatabase from '../components/ImageDatabase';
-import ImageGalleryHolder from '../components/ImageGalleryHolder';
+import Logo from '../../components/Logo';
+import ImageDatabase from '../../components/ImageDatabase';
+import ImageGalleryHolder from '../../components/ImageGalleryHolder';
+import AboutUs from '../../components/AboutUs';
 
-
+import './index.css';
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class MainPage extends React.Component {
 
   render () {
     return (
+      <div className='total-container'>
         <div className="body-container">
            <Logo />
            <div className="body">
@@ -20,6 +22,8 @@ class MainPage extends React.Component {
              <ImageDatabase />
            </div>
         </div>
+          <AboutUs />
+      </div>
       )
 
   }

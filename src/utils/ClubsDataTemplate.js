@@ -77,7 +77,7 @@ var clubs = [
 "recommended hours": "10am-2am",
 "price": "$",
 "website": "https://www.facebook.com/Boogie-Nightclub-209991049077594/?rf=313846151997722",
-"contact": "N/A",
+"contact": "Best Reached through Facebook",
 "description": "Decked out in everything '80s, from records and silhouetted wallpaper to old school posters, this themed club will take you way back to the good old days! Check out our event listing for parties happening here. ",
 "tags": ["club", "nightlife", "drinking", "local", "80s", "aesthetic"],
 "uberTime": "22 min",
