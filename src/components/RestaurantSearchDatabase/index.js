@@ -118,6 +118,7 @@ class RestaurantDatabase extends React.Component {
     //   return <div></div>
     // }
 
+    // @media all and (max-width: 415px) ? :
 
     render() {
       return (

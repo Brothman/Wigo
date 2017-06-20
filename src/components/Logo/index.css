@@ -3,6 +3,20 @@
   min-width: 275px;
 }
 
+@media all and (max-width: 415px) {
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    height:225px
+  }
+}
+
 .logo {
   height: 100%;
+}
+
+@media all and (max-width: 415px) {
+  .logo{
+    height: 350px
+  }
 }
