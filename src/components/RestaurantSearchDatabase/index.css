@@ -10,6 +10,13 @@
   margin-left: 20px;
 }
 
+@media all and (max-width: 415px) {
+  .search-image-container{
+    height: 120px;
+    width: 150px;
+    margin-left: 5px;
+  }
+}
 .search-restaurant-container {
   display: flex;
   flex-direction: column;
@@ -17,6 +24,11 @@
   overflow-y: scroll;
 }
 
+@media all and (max-width: 415px) {
+  .search-restaurant-container{
+
+  }
+}
 .search-text {
   color: white;
   font-family: 'Raleway';
@@ -31,11 +43,23 @@
   margin-top: 20px;
 }
 
+@media all and (max-width: 415px) {
+  .search-text-header{
+    font-size: 30px;
+  }
+}
+
 .search-text-container {
     max-width: 350px;
     margin-left: 20px;
 }
 
+@media all and (max-width: 415px) {
+  .search-text-container{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
 .search-image-info-container {
   display: flex;
   align-items: center;
@@ -45,6 +69,12 @@
   min-width: 250px;
 }
 
+@media all and (max-width: 415px) {
+  .search-image-info-container{
+    margin-top: 0px;
+    min-height: 190px;
+  }
+}
 .search-image-container {
   box-shadow:none;
 }
