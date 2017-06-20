@@ -7,8 +7,10 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from './components/App';
 import MainPage from './containers/MainPage';
+
 import SearchPage from './containers/SearchPage';
-import VenuePage from './containers/VenuePage.js';
+import VenuePage from './containers/VenuePage';
+
 
 
 /*

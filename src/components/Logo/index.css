@@ -16,15 +16,8 @@
 }
 
 @media all and (max-width: 415px) {
-  .logo {
-    height: 350px;
+  .logo{
+    height: 350px
   }
 }
 
-@media all and (max-width: 415px) {
-  .logo-container {
-    height: 225px;
-    display: flex;
-    justify-content: center;
-  }
-}

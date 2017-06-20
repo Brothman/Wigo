@@ -1,6 +1,7 @@
 import React from 'react'
-import Logo from '../components/Logo';
-import RestaurantDatabase from '../components/RestaurantDatabase';
+import Logo from '../../components/Logo';
+import RestaurantDatabase from '../../components/RestaurantDatabase';
+import './index.css';
 
 class VenuePage extends React.Component {
 
