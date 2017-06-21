@@ -22,10 +22,23 @@ class SearchBar extends React.Component {
   //  this.searchAlgorithim (input);
   };
 
+  handleKeyPress = (event) => {
+    if(event.key=='Enter'){
+      console.log('enter key pressed')
+      var input = this.refs.searchBarInput.value;
+      this.setState({
+        searchQuery: input
+      }, () => {
+        browserHistory.push(`/search/${this.state.searchQuery}`)
+      })
+  }
+}
+
+
   render () {
     return (
       <div className='searchbar-container'>
-        <input className='searchbar' type='text' ref="searchBarInput" placeholder='Search Away!'></input>
+        <input className='searchbar' type='text' ref="searchBarInput" placeholder='Search Away!' onKeyPress={this.handleKeyPress}></input>
         <button onClick={this.handleClick}>  Click me! </button>
       </div>
     )}
