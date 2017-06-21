@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../components/Logo';
 import ImageDatabase from '../../components/ImageDatabase';
-import ImageGalleryHolder from '../../components/ImageGalleryHolder';
+//import ImageGalleryHolder from '../../components/ImageGalleryHolder';
 import AboutUs from '../../components/AboutUs';
 
 import './index.css';
@@ -61,7 +61,6 @@ class MainPage extends React.Component {
         <div className="body-container">
            <Logo />
            <div className="body">
-             <ImageGalleryHolder />
              <ImageDatabase />
            </div>
         </div>
@@ -73,3 +72,6 @@ class MainPage extends React.Component {
 }
 
 export default MainPage;
+
+//scrapped for time being
+//<ImageGalleryHolder />
