@@ -7,13 +7,42 @@ import ArtAndMuseums from '../../Images/ArtAndMuseums.png';
 import Animals from '../../Images/Animals.png';
 import EatingOut from '../../Images/EatingOut.png';
 import Fitness from '../../Images/Fitness.jpg';
+import {Link} from 'react-router';
 import './index.css';
 
 class ImageDatabase extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      images : [Nightlife, Outdoors, Thrill, ArtAndMuseums, Animals, EatingOut, Fitness]
+      images : [
+        {
+          url: Nightlife,
+          label: 'Nightlife'
+        },
+        {
+          url: Outdoors,
+          label: 'Outdoors'
+        },
+        {
+          url: Thrill,
+          label: 'Thrill'
+        },
+        {
+          url: ArtAndMuseums,
+          label: 'Art and Museums'
+        },
+        {
+          url: Animals,
+          label: "Animals"
+        }, {
+          url: EatingOut,
+          label: 'Eating Out'
+        },
+        {
+          url: Fitness,
+          label: 'Fitness'
+        }]
+
     }
   }
 
@@ -23,13 +52,16 @@ class ImageDatabase extends React.Component {
         {this.state.images.map(function(image, i) {
          return (
            <div className='tag-container'>
-              <Images key={i} source={image}/>
+             <Link to={`/search/${image.label}`}>
+             <div className='image-label'>{image.label}</div>
+             <Images key={i} source={image.url}></Images>
+             </Link>
            </div>
          )})}
       </div>
     )}
 }
-
+//<Link to={`/search/${image.label}`/}>
 export default ImageDatabase;
 
 /*{this.state.images.map(function(image, i) {
