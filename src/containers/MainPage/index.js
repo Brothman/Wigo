@@ -3,7 +3,8 @@ import Logo from '../../components/Logo';
 import ImageDatabase from '../../components/ImageDatabase';
 //import ImageGalleryHolder from '../../components/ImageGalleryHolder';
 import AboutUs from '../../components/AboutUs';
-import {loginWithProvider} from '../../utils/auth'
+import {loginWithProvider} from '../../utils/auth';
+import requireAuth from '../../utils/authenticated';
 
 import './index.css';
 
@@ -25,11 +26,17 @@ class MainPage extends React.Component {
   }*/
 
   authenticateUser = () => {
+    //if not signed in, sign in.
+    if (!requireAuth) {
     loginWithProvider('facebook')
       .then((data) => {
         console.log('facebook data', data)
       })
   }
+  else {
+    alert ('Youre logged in');
+  }
+}
 
   componentWillMount = () => {
     //this.getData();
