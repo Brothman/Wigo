@@ -2,8 +2,24 @@
   display: flex;
   max-width: 600px;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 /*  background-image: url("../../Images/Museum.png");;*/
 }
+
+.image-label{
+  font-size: 36px;
+  color: white
+}
+
+@media all and (max-width: 415px) {
+  .image-label{
+    font-size: 18px;
+    color: white;
+  }
+}
+
+
 
 .tag-container {
   height: 250px;
