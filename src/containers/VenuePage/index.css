@@ -64,10 +64,7 @@
 
 @media all and (max-width: 415px) {
   .logo-container {
-    transform: scale(0.5);
     position: relative;
-    margin-top: -139px;
-    margin-left: -150px;
     display: hide;
 
   }
