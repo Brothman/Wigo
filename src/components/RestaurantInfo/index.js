@@ -17,12 +17,13 @@ class RestaurantInfo extends React.Component {
         <h2 className='venue-header'>{info.name}</h2>
           </div>
           <div className='Info-text'>
-        <p> <span className='text-title'>Uber Time: </span> {info.uberTime}</p>
-        <p> <span className='text-title'>Address: </span>{info.address}</p>
-        <p> <span className='text-title'>Today's Hours: </span> {info.todaysHours}</p>
-        <p> <span className='text-title'>Recommended Hours: </span> {info.recommendedHours}</p>
-        <p> <span className='text-title'>Price: </span> {info.price} </p>
-        <p> <span className='text-title'>Description: </span>{info.description}</p>
+        <p> <span className='text-title'>Description:<br></br> </span>{info.description}</p>
+        <p> <span className='text-title'>Price:<br></br> </span> {info.price} </p>
+        <p> <span className='text-title'>Today's Hours:<br></br> </span> {info.todaysHours}</p>
+        <p> <span className='text-title'>Recommended Hours:<br></br> </span> {info.recommendedHours}</p>
+        <p> <span className='text-title'>Address:<br></br> </span>{info.address}</p>
+        <p> <span className='text-title'>Uber Time From Camps Bay:<br></br> </span> {info.uberTime}</p>
+
       </div>
     </div>
     )

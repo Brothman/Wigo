@@ -15,6 +15,12 @@
   height: 100%;
 }
 
+@media all and (min-width: 415px) {
+  .logo {
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 415px) {
   .logo{
     height: 350px
