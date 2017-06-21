@@ -13,7 +13,9 @@ class VenuePage extends React.Component {
   render () {
     return (
         <div className="body-container">
+          <div className="venue-logo">
            <Logo />
+           </div>
            <div className="body">
              <RestaurantDatabase />
            </div>

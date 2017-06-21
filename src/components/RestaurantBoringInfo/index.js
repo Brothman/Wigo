@@ -11,7 +11,7 @@ class RestaurantBoringInfo extends React.Component {
     return (
       <div className='Info-Container'>
          <p className='text'>Website: <a className='website-link' href={info.website} target='_blank'> {info.website}</a></p>
-        <p className='text'>Phone: {info.contact}</p>
+        <p className='text'>Phone: +{info.contact}</p>
       </div>
     )
   }
