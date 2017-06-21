@@ -4,7 +4,8 @@ import ImageDatabase from '../../components/ImageDatabase';
 //import ImageGalleryHolder from '../../components/ImageGalleryHolder';
 import AboutUs from '../../components/AboutUs';
 import {loginWithProvider} from '../../utils/auth';
-import requireAuth from '../../utils/authenticated';
+import {logoutUser} from '../../utils/firebase';
+import {firebaseApp} from '../../utils/firebase.js'
 
 import './index.css';
 
@@ -25,25 +26,32 @@ class MainPage extends React.Component {
     });
   }*/
 
+ requireAuth = () => {
+   var user = firebaseApp.auth().currentUser;
+
+      if (user) {
+                  alert('logged in');
+                  console.log(user);
+              }
+              else {
+                this.authenticateUser();
+              }
+  }
+
   authenticateUser = () => {
-    //if not signed in, sign in.
-    if (!requireAuth) {
     loginWithProvider('facebook')
       .then((data) => {
         console.log('facebook data', data)
       })
-  }
-  else {
-    alert ('Youre logged in');
-  }
 }
 
-  componentWillMount = () => {
-    //this.getData();
-    //console.log('base ', firebase);
-    //console.log('app', app)
-  //  this.authenticateUser();
-  }
+/* great idea but can't figure it out right now and not necessary -- have to priotize time
+
+logoutUserClient = () => {
+  //firebaseApp.auth().unauth()
+  console.log('firebaseapp', firebaseApp);
+}*/
+
 
 
   render () {
@@ -56,7 +64,8 @@ class MainPage extends React.Component {
            </div>
         </div>
           <AboutUs />
-        <button onClick={this.authenticateUser}> Hello </button>
+        <button onClick={this.requireAuth}> Hello </button>
+        <button onClick={this.logoutUserClient}>Goodbye</button>
       </div>
       )
 
