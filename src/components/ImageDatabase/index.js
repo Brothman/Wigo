@@ -1,16 +1,19 @@
 import React from 'react'
 import Images from '../Images';
-import Museum from '../../Images/Museum.png';
-import Bars from '../../Images/Museum.png';
-import Food from '../../Images/Food.png';
+import Nightlife from '../../Images/Nightlife.png';
 import Outdoors from '../../Images/Outdoors.png';
+import Thrill from '../../Images/Thrill.png';
+import ArtAndMuseums from '../../Images/ArtAndMuseums.png';
+import Animals from '../../Images/Animals.png';
+import EatingOut from '../../Images/EatingOut.png';
+import Fitness from '../../Images/Fitness.jpg';
 import './index.css';
 
 class ImageDatabase extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      images : [Museum, Bars, Food, Outdoors]
+      images : [Nightlife, Outdoors, Thrill, ArtAndMuseums, Animals, EatingOut, Fitness]
     }
   }
 

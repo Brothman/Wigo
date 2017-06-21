@@ -8,6 +8,10 @@
     display: flex;
     justify-content: center;
     height:225px;
+<<<<<<< HEAD
+    overflow: hidden;
+=======
+>>>>>>> 485cfff1523c2d27c6fa4dcd8fa1b2557869fd71
   }
 }
 
