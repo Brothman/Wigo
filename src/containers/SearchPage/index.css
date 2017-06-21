@@ -7,12 +7,16 @@
 }
 
 @media all and (max-width: 415px) {
-
   .logo-container{
-    height: 350px;
+    height: 200px;
+    overflow: hidden;
   }
-
   .logo{
     height: 350px;
   }
+}
+
+.scroll{
+  width: 414px;
+  height: auto;
 }
