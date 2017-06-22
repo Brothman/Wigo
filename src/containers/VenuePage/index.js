@@ -17,7 +17,7 @@ class VenuePage extends React.Component {
            <Logo />
            </div>
            <div className="body">
-             <RestaurantDatabase />
+             <RestaurantDatabase params={this.props.params} />
            </div>
         </div>
       )

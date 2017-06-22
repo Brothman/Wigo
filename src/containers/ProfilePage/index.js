@@ -8,18 +8,16 @@ import Image from '../../components/Images';
 class ProfilePage  extends React.Component {
 
   render () {
-    var user = firebaseApp.auth().currentUser;
-    console.log('this is the user', user);
     return (
       <div className='profile-container'>
         <div className ='profile-logo-container'>
           <Logo />
         </div>
         <div className='profile-image-container'>
-          <Image source={user.photoURL} />
+          { this.props.user ? <Image source={this.props.user.photoURL} /> : null }
         </div>
         <div className='user-info-container'>
-          <h2>{user.displayName}</h2>
+          {this.props.user ? <h2>{this.props.user.displayName}</h2>: null}
           <h2> Wigo </h2>
         </div>
       </div>
