@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 130px;
 }
 
 .ben, .brigitte, .christina, .david, .lizzet, .louis, .nathan, .sanjana, .vaughan {
@@ -26,4 +27,77 @@
 
 .square-picture {
   display: inline;
+  height: 80px;
+  border: solid;
+  border-width: 10px;
+  border-color: rgba(200, 200, 200, 0);
+}
+
+.benben, .bribri, .chrischris, .dada, .lizliz, .lolo, .nana, .sasa, .vava {
+    display: none;
+    height: cover;
+    width: 300px;
+    margin-left: 10px;
+    font-family: 'Raleway';
+    color: white;
+    position: absolute;
+    background-color: rgba(6, 6, 6, .7);
+    padding: 8px;
+    margin-bottom: 150px;
+}
+
+.sasa {
+  right: 20px;
+}
+
+.vava {
+  right: 20px;
+}
+
+.square-picture:hover {
+  border: solid;
+  border-width: 10px;
+  border-color: rgba(200, 200, 200, 0.7);
+  -webkit-transition: opacity 0.5s ease-in-out;
+   -moz-transition: opacity 0.5s ease-in-out;
+   -ms-transition: opacity 0.5s ease-in-out;
+   -o-transition: opacity 0.5s ease-in-out;
+   transition: opacity 0.5s ease-in-out;
+}
+
+.ben:hover + .benben {
+    display: block;
+}
+
+.brigitte:hover + .bribri {
+    display: block;
+}
+
+.christina:hover + .chrischris {
+    display: block;
+}
+
+.david:hover + .dada {
+    display: block;
+}
+
+.lizzet:hover + .lizliz {
+    display: block;
+}
+
+
+.louis:hover + .lolo {
+    display: block;
+}
+
+.nathan:hover + .nana {
+    display: block;
+}
+
+.sanjana:hover + .sasa {
+    display: block;
+}
+
+.vaughan:hover + .vava {
+    display: block;
 }
