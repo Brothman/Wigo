@@ -66,12 +66,11 @@
 
 
 
-.searchbar {
-  width: 20%;
-  margin-right: 10px;
-}
 .header-1 {
   margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 @media all and (max-width: 415px) {
@@ -85,14 +84,15 @@ margin-left: 80px;
   height: 90.47px;
 }
 
-button {
-  margin-right: 40px;
-}
-
 .searchbar-container {
   display: flex;
   justify-content: center;
   margin-left: 160px;
+  margin-right: 160px;
+}
+
+.searchbar {
+  margin-right: 5px;
 }
 
 .logo-container {
