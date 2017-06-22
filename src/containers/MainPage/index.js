@@ -58,14 +58,37 @@ logoutUserClient = () => {
       browserHistory.push('/profile')
     }
 
+  // animateSlides = () => {
+  //   //var $slides = $('[data-slides]');
+  //   var data-slides=["./Images/Animals.png", "./Images/Bars.png"];
+  //   var $slides = $('.background-image');
+  //   console.log($slides);
+  // 	var images = data-slides;
+  // 	var count = images.length;
+  // 	var slideshow = function() {
+  // 		$slides
+  // 			.css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+  // 			.show(0, function() {
+  // 				setTimeout(slideshow, 5000);
+  // 			});
+  // 	};
+  // 	slideshow();
+  // }
+  //
+  // componentWillMount = () => {
+  //   this.animateSlides();
+  // }
+
 
   render () {
     return (
       <div className='total-container'>
         <div className="body-container">
+
            <Logo />
            <div className="body">
              <ImageDatabase />
+
            </div>
         </div>
           <AboutUs />

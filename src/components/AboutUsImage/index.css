@@ -5,7 +5,25 @@
   margin-right: 0;
 }
 
-.test {
-  border-radius: 50%;
-  position: relative;
+.row-of-square-pictures {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ben, .brigitte, .christina, .david, .lizzet, .louis, .nathan, .sanjana, .vaughan {
+   height: 80px;
+   width: 90px;
+}
+
+.square-pictures {
+    display: flex;
+    justify-content: space-around;
+    width: cover;
+    padding: 0px;
+}
+
+.square-picture {
+  display: inline;
 }
