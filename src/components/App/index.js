@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import SearchBar from '../SearchBar';
-
+import FireBaseTools from '../../utils/firebase'
 /*
 This is the layout component. It's displayed by the top-level Route
 this.props.children will correspond to the current URL's component.
@@ -13,9 +13,24 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchQuery: ""
+      searchQuery: "",
+      user: {
+
+      }
     }
-}
+  }
+
+  componentDidMount() {
+    FireBaseTools.fetchUser()
+    .then((user) => {
+      this.setState({
+        user: user
+      })
+    })
+    .catch((e) => {
+      FireBaseTools.logoutUser()
+    })
+  }
 
     render() {
         return (
@@ -26,6 +41,7 @@ class App extends React.Component {
                 </header>
                 <main className="main-content">
                     {this.props.children}
+                    {React.cloneElement(this.props.children, { user: this.state.user })}
                 </main>
                 <footer className="main-footer orange-stylized">
                   <h1 className="footer-1"> All the places you'll go with Wigo. </h1>

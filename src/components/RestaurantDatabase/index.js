@@ -15,17 +15,11 @@ class RestaurantDatabase extends React.Component {
       RestaurantArray : restaurants
     }
   }
-/*
-  render () {
-    return (
-      <div className="restaurant-container">
-        {this.state.RestaurantArray.map(function(restaurant, i) {
-         return <Images key={i} source={restaurant.imageUrl}/>
-       })}
-      </div>
-    )} */
+
+  //gatherVenue = () 
 
     render() {
+      console.log('url', this.props.params);
       return (
         <div className="restaurant-container">
           <RestaurantInfo info={this.state.RestaurantArray[0]} />

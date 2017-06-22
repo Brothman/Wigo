@@ -6,6 +6,13 @@
   }
 }
 
+@media all and (max-width: 1025px) {
+  .body{
+    width: 1024px;
+    background-color: black
+  }
+}
+
 @media all and (max-width: 415px) {
   .logo-container{
     height: 200px;
