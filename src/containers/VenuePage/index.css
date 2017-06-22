@@ -45,7 +45,7 @@
     margin-left: auto;
     margin-right: auto;
     transform: scale(0.7);
-    margin-top: -155px;
+    margin-top: -70px;
   }
 }
 
@@ -62,24 +62,12 @@
 }
 
 @media all and (max-width: 415px) {
-
-  .logo-container {
-    position: relative;
-    display: hide;
-  }
-  
     .venue-logo {
     transform: scale(0.5);
     position: relative;
-    margin-top: -87px;
+    margin-top: -55px;
     /*display: none;*/
 
-  }
-}
-
-@media all and (max-width: 415px) {
-  .logo {
-    display: hide;
   }
 }
 

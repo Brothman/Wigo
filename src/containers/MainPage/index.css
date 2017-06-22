@@ -100,3 +100,16 @@ button {
   margin-left: 40px;
   margin-right: 40px;
 }
+
+/*.body-container{
+  background-image:linear-gradient(rgba(72,18,14,0.5),rgba(72,18,14,0.5)), url("http://www.alwaysonpurpose.com/wp-content/uploads/2015/04/happypeople.jpg"), url("http://i.huffpost.com/gen/3971736/images/o-HAPPY-PEOPLE-facebook.jpg");
+  background-size:cover;
+	transition: background-image 1s linear;*/
+    /*background-position: 0px 0px;
+  	animation: body-container 35s linear infinite;*/
+
+/*}*/
+
+@keyframes body-container{
+  to {background-position: 100%}
+}
