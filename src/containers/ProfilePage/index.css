@@ -1,14 +1,33 @@
-.profile-logo-container {
-  width: 200px;
-  height: 200px;
-}
-
 .profile-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .user-info-container {
   color: white;
   font-family: 'Lobster';
-  font-size: 50px;
+  font-size: 40px;
+  margin: 5px 30px 30px 30px;
+}
+
+.profile-image-container {
+  width: 200px;
+  height: 200px;
+  margin:auto;
+}
+
+@media all and (max-width: 415px) {
+  .profile-image-container{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+}
+
+.profile-header {
+  color: white;
+  font-family: 'Lobster';
+  font-size: 40px;
 }
