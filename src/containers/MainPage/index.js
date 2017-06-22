@@ -7,6 +7,8 @@ import {loginWithProvider} from '../../utils/auth';
 import {logoutUser} from '../../utils/firebase';
 import {firebaseApp} from '../../utils/firebase.js'
 
+import {browserHistory} from 'react-router';
+
 import './index.css';
 
 
@@ -52,6 +54,9 @@ logoutUserClient = () => {
   console.log('firebaseapp', firebaseApp);
 }*/
 
+    profilePageSwitch = () => {
+      browserHistory.push('/profile')
+    }
 
 
   render () {
@@ -65,7 +70,7 @@ logoutUserClient = () => {
         </div>
           <AboutUs />
         <button onClick={this.requireAuth}> Hello </button>
-        <button onClick={this.logoutUserClient}>Goodbye</button>
+      <button onClick={this.profilePageSwitch}> Profile </button>
       </div>
       )
 

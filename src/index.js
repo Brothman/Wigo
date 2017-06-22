@@ -10,6 +10,7 @@ import MainPage from './containers/MainPage';
 
 import SearchPage from './containers/SearchPage';
 import VenuePage from './containers/VenuePage';
+import ProfilePage from './containers/ProfilePage';
 
 
 
@@ -28,6 +29,7 @@ const routes = (
       <IndexRoute component={MainPage} />
       <Route path="/venue/:venue" component={VenuePage} />
       <Route path="/search/:searchQuery" component={SearchPage} />
+      <Route path="/profile" component={ProfilePage} />
     </Route>
   </Router>
 );
