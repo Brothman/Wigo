@@ -42,7 +42,7 @@ class LandingPage extends React.Component {
 
   render () {
     return (
-      <div className="body-container">
+      <div className="land-body-container">
         <div className="land-button">
         <button className="hello-butt" onClick={this.requireAuth}><span>Log in  </span></button>
         <button className="profile-butt" onClick={this.profilePageSwitch}><span>Profile </span></button>

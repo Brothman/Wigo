@@ -72,10 +72,21 @@
   position: absolute;
   top: -4px;
   left: 5px;
-  clip: rect(0px,180px,135px,0px);
+
 }
 
+@media all and (max-width: 415px) {
+  .logo {
+    left:0px;
+  }
+}
 
+/*Clips only if not in mobile mode*/
+@media all and (min-width: 415px) {
+  .logo {
+  clip: rect(0px,180px,135px,0px);
+  }
+}
 
 .header-1 {
   margin-left: 160px;
@@ -89,9 +100,9 @@ margin-left: 80px;
 }
 
 
-.main-header {
+/*.main-header {
   height: 90.47px;
-}
+}*/
 
 .searchbar-container {
   display: flex;

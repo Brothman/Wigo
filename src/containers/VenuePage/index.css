@@ -68,10 +68,12 @@
 }
 
 @media all and (max-width: 415px) {
-  .logo {
-    position: absolute;
-    top:0px;
-    transform: translateX(-150px);
+  .logo-container {
+    /*position: absolute;*/
+    /*top:0px;*/
+    /*transform: translateX(-150px);*/
+    transform:translateX(-50px);
+    height: 143px;
   }
 }
 
@@ -101,5 +103,42 @@
 @media all and (max-width: 1068px) and (min-width:416px) {
   .image-info-container{
     margin-left: 0px;
+  }
+}
+
+@media all and (max-width:415px) {
+  .header-1 {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
+@media all and (max-width:415px) {
+  .header-1 a {
+    font-size: 25px;
+  }
+}
+
+.ProfileLogo {
+  right: 12px;
+}
+
+@media all and (max-width:415px) {
+  .ProfileLogo {
+    right:13px;
+  }
+}
+
+@media all and (min-width:416px) and (max-width: 1086px) {
+  .logo-container{
+    left: -32px;
+  }
+}
+
+@media all and (max-width: 415px) {
+.searchbar-container{
+  margin-left: 0px;
+  margin-right: 0px;
   }
 }

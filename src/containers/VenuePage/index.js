@@ -1,5 +1,4 @@
 import React from 'react'
-import ProfileLogo from '../../components/ProfileLogo';
 import RestaurantDatabase from '../../components/RestaurantDatabase';
 import './index.css';
 
@@ -13,9 +12,6 @@ class VenuePage extends React.Component {
   render () {
     return (
         <div className="body-container">
-          <div className="venue-logo">
-           <ProfileLogo />
-           </div>
            <div className="body">
              <RestaurantDatabase params={this.props.params} />
            </div>
