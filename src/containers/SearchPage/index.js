@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../../components/Logo';
 import ProfileLogo from '../../components/ProfileLogo';
 import RestaurantSearchDatabase from '../../components/RestaurantSearchDatabase';
 
@@ -15,7 +14,6 @@ class SearchPage extends React.Component {
   render () {
     return (
       <div className="body-container">
-         <Logo />
          <ProfileLogo />
          <div className="body">
            <RestaurantSearchDatabase params={this.props.params}/>
