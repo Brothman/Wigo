@@ -46,6 +46,14 @@ img {
 
 .body {
   display:flex;
+  width: auto;
+}
+
+@media all and (max-width: 1025px) and (min-width: 416px){
+  .body{
+    width: 1024px;
+
+  }
 }
 
 .searchbar {

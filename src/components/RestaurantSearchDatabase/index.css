@@ -31,7 +31,7 @@
     }
 }
 
-@media all and (max-width: 1025px) {
+@media all and (max-width: 1025px) and (min-width: 416px) {
   .search-restaurant-container{
     max-height: none;
     width: 1024px
@@ -75,7 +75,7 @@
   }
 }
 
-@media all and (max-width: 1025px) {
+@media all and (max-width: 1025px) and (min-width: 416px) {
   .search-text-container{
     margin-left: 100px;
   }
@@ -96,7 +96,7 @@
 
   }
 }
-@media all and (max-width: 1025px) {
+@media all and (max-width: 1025px) and (min-width: 416px) {
   .search-image-info-container{
     justify-content: center;
   }
