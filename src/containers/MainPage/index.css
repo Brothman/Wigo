@@ -60,6 +60,7 @@
   height: 210px;
   position: absolute;
   top: -4px;
+  left: 5px;
   clip: rect(0px,180px,135px,0px);
 }
 
@@ -125,5 +126,79 @@ button {
 @media all and (min-width: 415px) and (max-width: 1068px) {
   .square-picture {
      border: 2px;
+     height: 60px;
+  }
+}
+
+@media all and (min-width: 415px) and (max-width: 1068px) {
+  .square-picture:hover {
+     border-width: 6px;
+  }
+}
+
+@media all and (min-width: 815px) and (max-width: 1068px) {
+  .nana {
+     right: 20px;
+  }
+}
+
+@media all and (min-width: 595px) and (max-width: 815px) {
+  .nana, .lolo {
+     right: 20px;
+  }
+}
+
+@media all and (min-width: 415px) and (max-width: 595px) {
+  .nana, .lolo, .lizliz, .dada {
+    right: 20px;
+  }
+}
+
+@media all and (min-width: 415px) and (max-width: 450px) {
+  .nana, .lolo, .lizliz, .dada, .chrischris {
+    right: 20px;
+  }
+}
+@media all and (max-width: 415px) {
+  .nana, .lolo, .lizliz, .dada, .chrischris {
+     right: 20px;
+  }
+}
+
+@media all and (min-width: 415px) and (max-width: 1068px){
+  .row-of-square-pictures {
+     height: 100px;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .ben, .brigitte, .christina, .david, .lizzet, .louis, .nathan, .sanjana, .vaughan {
+     height: 40px;
+     width: 40px;
+  }
+}
+
+@media all and (max-width: 1068px) {
+  .square-pictures {
+     margin: 5px;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .square-picture:hover {
+     border-width: 4px;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .square-picture {
+     border: 1px;
+     height: 40px;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .row-of-square-pictures {
+     height: 80px;
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import {firebaseApp} from '../../utils/firebase.js'
 import './index.css'
-import Logo from '../../components/Logo';
 import Image from '../../components/Images';
 import ProfileLogo from '../../components/ProfileLogo'
 
@@ -15,7 +14,6 @@ class ProfilePage  extends React.Component {
           <h2>id page</h2>
         </div>
         <div className ='profile-logo-container'>
-          <Logo />
           <ProfileLogo />
         </div>
         <div className='profile-image-container'>
