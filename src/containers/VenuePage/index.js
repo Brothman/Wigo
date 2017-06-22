@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../../components/Logo';
 import ProfileLogo from '../../components/ProfileLogo';
 import RestaurantDatabase from '../../components/RestaurantDatabase';
 import './index.css';
@@ -15,7 +14,6 @@ class VenuePage extends React.Component {
     return (
         <div className="body-container">
           <div className="venue-logo">
-           <Logo />
            <ProfileLogo />
            </div>
            <div className="body">
