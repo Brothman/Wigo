@@ -1,0 +1,10 @@
+.ProfileLogo {
+  position: absolute;
+  top: 20px;
+  height: 90px;
+  right: 40px;
+}
+
+@media all and (max-width: 415px) {
+
+}
