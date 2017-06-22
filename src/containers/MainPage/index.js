@@ -3,21 +3,19 @@ import Logo from '../../components/Logo';
 import ImageDatabase from '../../components/ImageDatabase';
 //import ImageGalleryHolder from '../../components/ImageGalleryHolder';
 import AboutUs from '../../components/AboutUs';
+import {loginWithProvider} from '../../utils/auth';
+import {logoutUser} from '../../utils/firebase';
+import {firebaseApp} from '../../utils/firebase.js'
 
 import './index.css';
 
-import base from '../../rebase';
-import firebase from 'firebase/app';
-import 'firebase/auth';
-
-import $ from 'jquery';
 
 class MainPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = { }
   }
-
+/*
   getData = () => {
     base.fetch ('Activities', {
       context: this,
@@ -26,34 +24,34 @@ class MainPage extends React.Component {
         console.log(data);
       }
     });
+  }*/
+
+ requireAuth = () => {
+   var user = firebaseApp.auth().currentUser;
+
+      if (user) {
+                  alert('logged in');
+                  console.log(user);
+              }
+              else {
+                this.authenticateUser();
+              }
   }
 
-/*  authenticateUser = () => {
+  authenticateUser = () => {
+    loginWithProvider('facebook')
+      .then((data) => {
+        console.log('facebook data', data)
+      })
+}
 
-    var provider = new base.auth.FacebookAuthProvider();
+/* great idea but can't figure it out right now and not necessary -- have to priotize time
 
-    base.auth().signInWithPopup(provider).then(function(result) {
-      // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-      var token = result.credential.accessToken;
-      // The signed-in user info.
-      var user = result.user;
-      // ...
-    }).catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      // The email of the user's account used.
-      var email = error.email;
-      // The firebase.auth.AuthCredential type that was used.
-      var credential = error.credential;
-      // ...
-    });
-  } */
+logoutUserClient = () => {
+  //firebaseApp.auth().unauth()
+  console.log('firebaseapp', firebaseApp);
+}*/
 
-  componentWillMount = () => {
-    this.getData();
-    //this.authenticateUser();
-  }
 
   // animateSlides = () => {
   //   //var $slides = $('[data-slides]');
@@ -89,6 +87,8 @@ class MainPage extends React.Component {
            </div>
         </div>
           <AboutUs />
+        <button onClick={this.requireAuth}> Hello </button>
+        <button onClick={this.logoutUserClient}>Goodbye</button>
       </div>
       )
 
