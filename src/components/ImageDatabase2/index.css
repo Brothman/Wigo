@@ -1,4 +1,4 @@
-.tags-container {
+.tags-container2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,13 +6,13 @@
 /*  background-image: url("../../Images/Museum.png");;*/
 }
 
-.image-label{
+.image-label2{
   font-size: 36px;
   color: black;
 }
 
 @media all and (max-width: 415px) {
-  .image-label{
+  .image-label2{
     font-size: 18px;
     color: white;
   }
@@ -20,7 +20,7 @@
 
 
 
-.tag-container {
+.tag-container2 {
   height: 250px;
   width: 250px;
 }

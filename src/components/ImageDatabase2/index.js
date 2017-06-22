@@ -1,33 +1,28 @@
 import React from 'react'
 import Images from '../Images';
-
-import Animals from '../../Images/Animals.png';
-import EatingOut from '../../Images/EatingOut.png';
-import Fitness from '../../Images/Fitness.jpg';
-import Thrill from '../../Images/Thrill.png';
+import Nightlife from '../../Images/Nightlife.png';
+import Outdoors from '../../Images/Outdoors.png';
+import Discount from '../../Images/Discount.png';
 
 import {Link} from 'react-router';
 import './index.css';
 
-class ImageDatabase extends React.Component {
+class ImageDatabase2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       images : [
         {
-          url: Animals,
-          label: "Animals"
-        }, {
-          url: EatingOut,
-          label: 'Food'
+          url: Nightlife,
+          label: 'Nightlife'
         },
         {
-          url: Fitness,
-          label: 'Fitness'
+          url: Outdoors,
+          label: 'Outdoors'
         },
         {
-          url: Thrill,
-          label: 'Thrill'
+          url: Discount,
+          label: 'Discounts'
         }]
 
     }
@@ -35,12 +30,12 @@ class ImageDatabase extends React.Component {
 
   render () {
     return (
-      <div className="tags-container" >
+      <div className="tags-container2" >
         {this.state.images.map(function(image, i) {
          return (
-           <div className='tag-container'>
+           <div className='tag-container2'>
              <Link to={`/search/${image.label}`}>
-             <div className='image-label'>{image.label}</div>
+             <div className='image-label2'>{image.label}</div>
              <Images key={i} source={image.url}></Images>
              </Link>
            </div>
@@ -49,7 +44,7 @@ class ImageDatabase extends React.Component {
     )}
 }
 //<Link to={`/search/${image.label}`/}>
-export default ImageDatabase;
+export default ImageDatabase2;
 
 /*{this.state.images.map(function(image, i) {
  return <Images key={i} source={image}/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileLogo from '../../components/ProfileLogo'
 import ImageDatabase from '../../components/ImageDatabase';
+import ImageDatabase2 from '../../components/ImageDatabase2';
 import ImageGalleryHolder from '../../components/ImageGalleryHolder';
 import AboutUs from '../../components/AboutUs';
 import {loginWithProvider} from '../../utils/auth';
@@ -107,8 +108,9 @@ logoutUserClient = () => {
         <div className="body-container">
            <ProfileLogo />
            <div className="body">
-             <ImageDatabase />
+             <ImageDatabase />             
              <ImageGalleryHolder />
+             <ImageDatabase2 />
            </div>
         </div>
           <AboutUs />
