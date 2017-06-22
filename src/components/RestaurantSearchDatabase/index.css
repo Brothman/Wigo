@@ -20,7 +20,7 @@
 .search-restaurant-container {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 @media all and (max-width: 415px) {
@@ -33,7 +33,8 @@
 @media all and (max-width: 1025px) and (min-width: 416px) {
   .search-restaurant-container{
     max-height: none;
-    width: 1024px
+    width: 1024px;
+    margin: auto;
   }
 }
 .search-text {
