@@ -53,4 +53,50 @@
     margin-right: 5px;
     margin-left: 5px;
   }
+
+}
+.logo {
+  width: 160px;
+  height: 210px;
+  position: absolute;
+  top: -4px;
+  clip: rect(0px,180px,135px,0px);
+}
+
+.searchbar {
+  width: 20%;
+  margin-right: 10px;
+}
+.header-1 {
+  margin-left: 160px;
+}
+
+.main-header {
+  height: 90.47px;
+}
+
+button {
+  margin-right: 40px;
+}
+
+.searchbar-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 160px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  height: 50px;
+}
+
+.about-image {
+  margin-top: 25px;
+}
+
+.square-pictures {
+  margin-left: 40px;
+  margin-right: 40px;
 }
