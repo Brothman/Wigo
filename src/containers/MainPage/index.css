@@ -1,14 +1,35 @@
-.tag {
+
+
+.body {
+  padding-bottom: 20px;
+}
+.tag-container2 {
   max-width: 100px;
   max-height: 100px;
-  padding: 10px;
+  padding: 30px;
 }
 
 .tag-container {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 100px;
+  max-height: 100px;
+  padding: 30px;
 }
 
+.tags-container{
+  width: 33%;
+  height: 400px;
+}
+
+.tags-container2 {
+  width: 33%;
+  height: 400px;
+}
+
+.image-gallery {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
 
 @media all and (max-width: 415px) {
   .tag-container {
