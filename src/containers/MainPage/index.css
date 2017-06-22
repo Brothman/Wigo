@@ -1,3 +1,14 @@
+.tag {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px;
+}
+
+.tag-container {
+  max-width: 200px;
+  max-height: 200px;
+}
+
 
 @media all and (max-width: 415px) {
   .tag-container {
@@ -66,10 +77,6 @@
 
 
 
-.searchbar {
-  width: 20%;
-  margin-right: 10px;
-}
 .header-1 {
   margin-left: 160px;
   margin-right: 160px;
@@ -86,14 +93,15 @@ margin-left: 80px;
   height: 90.47px;
 }
 
-button {
-  margin-right: 40px;
-}
-
 .searchbar-container {
   display: flex;
   justify-content: center;
   margin-left: 160px;
+  margin-right: 160px;
+}
+
+.searchbar {
+  margin-right: 5px;
 }
 
 .logo-container {

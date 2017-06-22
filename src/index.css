@@ -20,21 +20,24 @@ img {
 }
 
 .main-app {
-  background-color: #48120E;
+  background-color: rgb(220, 220, 220);
 }
 
 .orange-stylized {
   text-align: center;
   /*background-color: #E7CC8F;*/
-  background-color: #F8F3E6;
+  background-color: rgb(165, 165, 165);
   padding-top: 5px;
   padding-bottom: 5px;
+  border-bottom-color: black;
+  border-bottom: solid;
 }
 
 
 .body-container {
   display: flex;
   justify-content: center;
+  background-color: antiquewhite;
 }
 
 
@@ -76,8 +79,16 @@ img {
   }
 }
 
+
 .main-header .header-1 {
   font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lobster";
+  color: black;
+  font-size: 40px;
 }
 
 

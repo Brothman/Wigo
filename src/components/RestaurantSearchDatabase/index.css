@@ -38,8 +38,9 @@
   }
 }
 .search-text {
-  color: white;
+  /*color: white;*/
   font-family: 'Raleway';
+  color: black;
 }
 
 @media all and (max-width: 415px) {
@@ -48,12 +49,13 @@
   }
 }
 .search-text-header {
-  color: #E7CC8F;
+  /*color: #E7CC8F;*/
   font-size: 38px;
   font-weight: 900;
   font-family: 'Lobster';
   margin-bottom: 16px;
   margin-top: 20px;
+  color: burlywood;
 }
 
 @media all and (max-width: 415px) {

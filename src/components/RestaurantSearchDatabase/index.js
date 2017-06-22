@@ -12,6 +12,8 @@ import clubs from '../../utils/ClubsDataTemplate.js';
 import events from '../../utils/EventsDataTemplate.js';
 import fitness from '../../utils/Fitness.js';
 
+import {firebaseDb} from '../../utils/firebase';
+
 
 class RestaurantDatabase extends React.Component {
   constructor(props) {
@@ -27,6 +29,9 @@ class RestaurantDatabase extends React.Component {
       resultArray: []
     }
   }
+
+
+
 
   searchAlorithimStateChange = (arrayToLoop, searchTerm) => {
     //Allows us to keep old finds in the resultArray
@@ -86,6 +91,14 @@ class RestaurantDatabase extends React.Component {
   //  console.log(this.state.EventsArray);
   }
 
+/*  addDatabaseInformation = () => {
+    firebaseDb.ref('Activities').once('value').then((data) => {
+      console.log(data.val());
+      console.log(data.val()[0].)
+    //  this.setState()
+    })
+  }*/
+
   componentWillMount = () => {
       this.searchAlgorithim(this.props.params.searchQuery);
   }
@@ -94,36 +107,26 @@ class RestaurantDatabase extends React.Component {
     //call searchAlgorithim once resultArray has been reset for new search
     this.setState ({resultArray: []}, () => {
       this.searchAlgorithim(nextProps.params.searchQuery)})
-
   }
 
-/*
-  render () {
-    return (
-      <div className="search-restaurant-container">
-        {this.state.RestaurantArray.map(function(restaurant, i) {
-         return (
-           <div key={restaurant.name} className="search-image-info-container">
-             <div className='search-image-container'>
-               <Images key={i} source={restaurant.imageUrl}/>
-             </div>
-             <div className='search-text-container'>
-               <p className='search-text' key={restaurant.description}>{restaurant.description}</p>
-             </div>
-          </div>
-          )
-       })}
-      </div>
-    )} */
-
-    // render () {
-    //   console.log(this.props)
-    //   return <div></div>
-    // }
-
-    // @media all and (max-width: 415px) ? :
 
     render() {
+    //  var database = firebaseApp.database().ref('Activities');
+    //  console.log('data activites', firebaseDb.ref('Activities'));
+    //  console.log('data', firebaseDb);
+    firebaseDb.ref('Activities').once('value').then((data) => {
+      var dataValue = data.val();
+      console.log('data.val', dataValue);
+      //array to store all the value
+      var storageArray = [];
+      //make an array of all the different places
+      for (var key in dataValue) {
+        if (dataValue.hasOwnProperty(key)) {
+    storageArray.push(dataValue[key]);
+  }
+}
+    })
+
       return (
         <div className="search-restaurant-container">
           {this.state.resultArray.map(function(restaurant, i) {

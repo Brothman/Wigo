@@ -31,19 +31,16 @@ handleClick = () => {
           </div>
           <div className='about-description'>
             <h2 className='header-live'> Live the Perfect Day Everyday</h2>
-            <p className ='text-live'> The MVP for Wigo is LIVE!</p>
-            <p className ='text-live'> We are solution from and for iXperience students</p>
-            <p className ='text-live'> Wigo has two primary functionalities: </p>
-            <ol className ='ordered-text-live'>
-              <li>Shows the best events and venues for YOU </li>
-              <li>Provides YOU with DISCOUNTS -- Wigo Makes Summer Affordable</li>
-            </ol>
+            
+            <p className ='text-live'>Wigo...</p>
+            <p className ='text-live'> Finds new, fun, and cheap things for YOU to do in Cape Town</p>
+            <p className ='text-live'>while making YOUR summer an affordable adventure!</p>
           </div>
           <div className='fontawesome-container'>
             <FontAwesome onClick={this.handleClick} className='arrow' name='arrow-up' />
           </div>
           <div className='header-start-container'>
-            <h2 className='header-start'>Start Your Adventure</h2>
+            <h2 className='header-start'>Search above to start the party</h2>
           </div>
           </div>
           <AboutUsImage />

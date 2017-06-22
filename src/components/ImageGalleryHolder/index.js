@@ -1,9 +1,9 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import Bars from '../../Images/Bars.png';
-import Animals from '../../Images/Animals.png';
-import Surfing from '../../Images/Surfing.png';
 import Fancy from '../../Images/Fancy.png';
+import Animals from '../../Images/Animals.png';
+import Fitness from '../../Images/Fitness.jpg';
+import Logo from '../../Images/Logo.png';
 import './index.css'
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -11,7 +11,7 @@ class ImageGalleryHolder extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      images: [Bars, Animals, Surfing, Fancy]
+      images: [Fancy, Animals, Fitness, Logo]
     }
   }
 
@@ -20,21 +20,21 @@ class ImageGalleryHolder extends React.Component {
 
         const images = [
           {
-            original: Fancy,
-            thumbnail: Fancy,
+            original: Logo,
+            thumbnail: Logo,
             sizes: 1000
           },
           {
-            original: Surfing,
-            thumbnail: Surfing
+            original: Fitness,
+            thumbnail: Fitness
           },
           {
             original: Animals,
             thumbnail: Animals
           },
           {
-            original: Bars,
-            thumbnail: Bars
+            original: Fancy,
+            thumbnail: Fancy
          }
         ]
 
