@@ -38,7 +38,7 @@ img {
 .body-container {
   display: flex;
   justify-content: center;
-  background-color: antiquewhite;
+  background-color: rgb(212, 212, 212);
 }
 
 
@@ -81,16 +81,10 @@ img {
 }
 
 
-.main-header .header-1 {
+/*.main-header .header-1 {
   font-size: 22px;
-}
+}*/
 
-a {
-  text-decoration: none;
-  font-family: "Lobster";
-  color: black;
-  font-size: 40px;
-}
 
 
 .main-header .searchbar-container {
