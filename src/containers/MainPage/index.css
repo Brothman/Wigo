@@ -72,6 +72,7 @@
 }
 .header-1 {
   margin-left: 160px;
+  margin-right: 160px;
 }
 
 @media all and (max-width: 415px) {
