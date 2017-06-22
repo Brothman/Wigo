@@ -63,6 +63,8 @@
   clip: rect(0px,180px,135px,0px);
 }
 
+
+
 .searchbar {
   width: 20%;
   margin-right: 10px;
@@ -70,6 +72,13 @@
 .header-1 {
   margin-left: 160px;
 }
+
+@media all and (max-width: 415px) {
+  .header-1 {
+margin-left: 80px;
+  }
+}
+
 
 .main-header {
   height: 90.47px;
@@ -98,4 +107,23 @@ button {
 .square-pictures {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+@media all and (min-width: 415px) and (max-width: 1068px) {
+  .ben, .brigitte, .christina, .david, .lizzet, .louis, .nathan, .sanjana, .vaughan {
+     height: 60px;
+     width: 60px;
+  }
+}
+
+@media all and (min-width: 415px) and (max-width: 1068px) {
+  .square-pictures {
+     margin: 10px;
+  }
+}
+
+@media all and (min-width: 415px) and (max-width: 1068px) {
+  .square-picture {
+     border: 2px;
+  }
 }

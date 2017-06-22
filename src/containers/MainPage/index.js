@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../components/Logo';
+import ProfileLogo from '../../components/ProfileLogo'
 import ImageDatabase from '../../components/ImageDatabase';
 //import ImageGalleryHolder from '../../components/ImageGalleryHolder';
 import AboutUs from '../../components/AboutUs';
@@ -106,6 +107,7 @@ logoutUserClient = () => {
       <div className='total-container'>
         <div className="body-container">
            <Logo />
+           <ProfileLogo />
            <div className="body">
              <ImageDatabase />
            </div>
