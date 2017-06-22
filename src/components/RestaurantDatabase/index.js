@@ -13,6 +13,7 @@ import clubs from '../../utils/ClubsDataTemplate.js';
 import events from '../../utils/EventsDataTemplate.js';
 import fitness from '../../utils/Fitness.js';
 import thrill from '../../utils/thrill.js';
+import badSearch from '../../utils/badSearch';
 
 
 class RestaurantDatabase extends React.Component {

@@ -11,8 +11,9 @@ import bars from '../../utils/BarsDataTemplate.js';
 import clubs from '../../utils/ClubsDataTemplate.js';
 import events from '../../utils/EventsDataTemplate.js';
 import fitness from '../../utils/Fitness.js';
-import thrill from '../../utils/thrill.js'
-
+import thrill from '../../utils/thrill.js';
+import discounts from '../../utils/discounts';
+import badSearch from '../../utils/badSearch';
 
 
 
@@ -28,6 +29,7 @@ class RestaurantDatabase extends React.Component {
       EventsArray: events,
       FitnessArray: fitness,
       ThrillArray: thrill,
+      DiscountsArray: discounts,
       resultArray: []
     }
   }
@@ -88,6 +90,7 @@ class RestaurantDatabase extends React.Component {
     this.searchAlorithimStateChange(this.state.EventsArray, searchTerm);
     this.searchAlorithimStateChange(this.state.FitnessArray, searchTerm);
     this.searchAlorithimStateChange(this.state.ThrillArray, searchTerm);
+    this.searchAlorithimStateChange(this.state.DiscountsArray, searchTerm);
     this.shuffleArray();
   }
 
@@ -101,8 +104,11 @@ class RestaurantDatabase extends React.Component {
 
 
   componentWillMount = () => {
-    this.searchAlgorithim(this.props.params.searchQuery);
+    this.setState ({resultArray: []}, () => {
+      this.searchAlgorithim(this.props.params.searchQuery)})
   }
+
+
 
 
   componentWillReceiveProps = (nextProps) => {
@@ -162,8 +168,6 @@ class RestaurantDatabase extends React.Component {
 
 
     render() {
-      console.log(this.state.ActivitiesArray);
-      console.log(activities);
       return (
         <div className="search-restaurant-container">
           {this.state.resultArray.map(function(restaurant, i) {

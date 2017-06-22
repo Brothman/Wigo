@@ -22,7 +22,7 @@ class ImageDatabase2 extends React.Component {
         },
         {
           url: Discount,
-          label: 'Discounts'
+          label: 'Discount'
         }]
 
     }

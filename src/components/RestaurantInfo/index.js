@@ -19,10 +19,11 @@ class RestaurantInfo extends React.Component {
           <div className='Info-text'>
         <p> <span className='text-title'>Description:<br></br> </span>{info.description}</p>
         <p> <span className='text-title'>Price:<br></br> </span> {info.price} </p>
-        <p> <span className='text-title'>Today's Hours:<br></br> </span> {info.todaysHours}</p>
+        <p> <span className='text-title'>Standard Hours:<br></br> </span> {info.todaysHours}</p>
         <p> <span className='text-title'>Recommended Hours:<br></br> </span> {info.recommendedHours}</p>
         <p> <span className='text-title'>Address:<br></br> </span>{info.address}</p>
         <p> <span className='text-title'>Uber Time From Camps Bay:<br></br> </span> {info.uberTime}</p>
+        <p> <span className='text-title'>Discount: <br></br> </span> {info.discount}</p>
 
       </div>
     </div>
