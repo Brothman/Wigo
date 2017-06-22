@@ -1,0 +1,14 @@
+.profile-logo-container {
+  width: 200px;
+  height: 200px;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.user-info-container {
+  color: white;
+  font-family: 'Lobster';
+  font-size: 50px;
+}
