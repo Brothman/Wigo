@@ -11,7 +11,7 @@ import MainPage from './containers/MainPage';
 import SearchPage from './containers/SearchPage';
 import VenuePage from './containers/VenuePage';
 import ProfilePage from './containers/ProfilePage';
-
+import LandingPage from './containers/LandingPage';
 
 
 /*
@@ -26,7 +26,8 @@ The <User/> instance will be passed a prop called `params`. It will be an object
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={MainPage} />
+      <IndexRoute component={LandingPage} />
+      <Route path="/home" component={MainPage} />
       <Route path="/venue/:venue" component={VenuePage} />
       <Route path="/search/:searchQuery" component={SearchPage} />
       <Route path="/profile" component={ProfilePage} />
