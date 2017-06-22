@@ -7,6 +7,7 @@ import ArtAndMuseums from '../../Images/ArtAndMuseums.png';
 import Animals from '../../Images/Animals.png';
 import EatingOut from '../../Images/EatingOut.png';
 import Fitness from '../../Images/Fitness.jpg';
+import Discount from '../../Images/Discount.png';
 import {Link} from 'react-router';
 import './index.css';
 
@@ -41,6 +42,10 @@ class ImageDatabase extends React.Component {
         {
           url: Fitness,
           label: 'Fitness'
+        },
+        {
+          url: Discount,
+          label: 'Discounts'
         }]
 
     }
