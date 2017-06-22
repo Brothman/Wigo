@@ -20,8 +20,7 @@
 .search-restaurant-container {
   display: flex;
   flex-direction: column;
-  max-height: 615px;
-  overflow-y: scroll;
+  
 }
 
 @media all and (max-width: 415px) {
