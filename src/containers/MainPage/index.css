@@ -80,8 +80,6 @@
 .header-1 {
   margin-left: 160px;
   margin-right: 160px;
-  margin-bottom: 20px;
-  margin-top: 0px;
 }
 
 @media all and (max-width: 415px) {

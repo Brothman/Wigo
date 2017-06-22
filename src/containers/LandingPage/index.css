@@ -1,0 +1,133 @@
+.body-container {
+  height: 418px;
+}
+
+.land-button{
+  margin-top: 140px;
+}
+
+.hello-butt {
+  height: 100px;
+  width: 250px;
+  text-align: center;
+  display: inline-block;
+  font-size: 50px;
+  border-radius: 8px;
+  font: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.profile-butt {
+  height: 100px;
+  width: 250px;
+  text-align: center;
+  display: inline-block;
+  font-size: 50px;
+  border-radius: 8px;
+  font: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.hello-butt span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hello-butt span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hello-butt:hover span {
+  padding-right: 35px;
+}
+
+.hello-butt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.profile-butt span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.profile-butt span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.profile-butt:hover span {
+  padding-right: 35px;
+}
+
+.profile-butt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media all and (max-width:415px) {
+  .hello-butt, .profile-butt{
+    height: 50px;
+    width: 115px;
+    font-size: 25px;
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width:415px) {
+  .land-button {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+  }
+}
+
+@media all and (max-width:415px) {
+  .hello-butt{
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width:415px) {
+  .profile-butt{
+    margin-left: 20px;
+  }
+}
+
+@media all and (min-width:416px) and (max-width:1068px) {
+  .land-button {
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+
+  }
+}
+
+@media all and (min-width:416px) and (max-width:1068px) {
+  .hello-butt{
+    margin-right: 20px;
+  }
+}
+
+@media all and (min-width:416px) and (max-width:1068px) {
+  .profile-butt{
+    margin-left: 20px;
+  }
+}
