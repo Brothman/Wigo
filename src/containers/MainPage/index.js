@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileLogo from '../../components/ProfileLogo'
 import ImageDatabase from '../../components/ImageDatabase';
-//import ImageGalleryHolder from '../../components/ImageGalleryHolder';
+import ImageGalleryHolder from '../../components/ImageGalleryHolder';
 import AboutUs from '../../components/AboutUs';
 import {loginWithProvider} from '../../utils/auth';
 import {logoutUser} from '../../utils/firebase';
@@ -108,6 +108,7 @@ logoutUserClient = () => {
            <ProfileLogo />
            <div className="body">
              <ImageDatabase />
+             <ImageGalleryHolder />
            </div>
         </div>
           <AboutUs />
