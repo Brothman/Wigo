@@ -1,4 +1,27 @@
+.image-label, .image-label2 {
+  font-family: "Lobster";
+  display: flex;
+  justify-content: center;
+}
 
+@media all and (max-width: 415px) {
+  .image-gallery-content {
+    display: none;
+  }
+}
+
+@media all and (max-width: 415px) {
+ button {
+  style: inset;
+  background-color: #e0e0e0;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+}
+
+a {
+  text-decoration: none;
+}
 
 .body {
   padding-bottom: 20px;
@@ -9,6 +32,7 @@
   padding: 30px;
 }
 
+
 .tag-container {
   max-width: 100px;
   max-height: 100px;
@@ -18,6 +42,7 @@
 .tags-container{
   width: 33%;
   height: 400px;
+
 }
 
 .tags-container2 {
@@ -32,17 +57,27 @@
 }
 
 @media all and (max-width: 415px) {
-  .tag-container {
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .tag-container, .tag-container2 {
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+
   }
 }
 
 @media all and (max-width: 415px) {
-  .tags-container {
+  .tags-container, .tags-container2 {
     justify-content: space-around;
+    width: 50%;
+    height: 100%;
+
+  }
+}
+
+@media all and (max-width: 415px) {
+  .image-gallery {
+    width: 0px;
+    height: 0px;
   }
 }
 

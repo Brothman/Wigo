@@ -4,6 +4,7 @@ import SearchBar from '../SearchBar';
 import FireBaseTools from '../../utils/firebase'
 import Logo from '../Logo/index';
 import ProfileLogo from '../ProfileLogo'
+import './index.css';
 /*
 This is the layout component. It's displayed by the top-level Route
 this.props.children will correspond to the current URL's component.
@@ -38,7 +39,7 @@ class App extends React.Component {
         return (
             <div className="main-app">
                 <header className="main-header orange-stylized">
-                    <h1 className="header-1"><Link to="/venue/venue">The places you want. The prices you can afford.</Link></h1>
+                    <h1 className="header-1">The places you want. The prices you can afford.</h1>
                     <SearchBar />
                     <Logo></Logo>
                     <ProfileLogo></ProfileLogo>

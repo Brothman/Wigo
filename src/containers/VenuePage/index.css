@@ -31,12 +31,14 @@
 
 .restaurant-container {
   display: flex;
+  padding: 0px 20px 60px 60px;
 }
 
 @media all and (max-width: 415px) {
   .restaurant-container {
     flex-direction: column-reverse;
     max-width: 375px;
+    padding: 0px;
   }
 }
 
@@ -141,4 +143,8 @@
   margin-left: 0px;
   margin-right: 0px;
   }
+}
+
+.website-link  {
+  font-size: 15px;
 }

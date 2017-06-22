@@ -49,13 +49,13 @@
   }
 }
 .search-text-header {
-  /*color: #E7CC8F;*/
+  /*color: #48120E;*/
   font-size: 38px;
   font-weight: 900;
   font-family: 'Lobster';
   margin-bottom: 16px;
   margin-top: 20px;
-  color: burlywood;
+  color: #48120E;
 }
 
 @media all and (max-width: 415px) {
