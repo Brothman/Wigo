@@ -34,6 +34,7 @@
 @media all and (max-width: 1025px) {
   .search-restaurant-container{
     max-height: none;
+    width: 1024px
   }
 }
 .search-text {
@@ -73,6 +74,12 @@
     overflow: auto;
   }
 }
+
+@media all and (max-width: 1025px) {
+  .search-text-container{
+    margin-left: 100px;
+  }
+}
 .search-image-info-container {
   display: flex;
   align-items: center;
@@ -87,6 +94,11 @@
     margin-top: 0px;
     min-height: 200px;
 
+  }
+}
+@media all and (max-width: 1025px) {
+  .search-image-info-container{
+    justify-content: center;
   }
 }
 .search-image-container {
