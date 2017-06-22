@@ -1,6 +1,5 @@
 .tags-container {
   display: flex;
-  max-width: 600px;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
