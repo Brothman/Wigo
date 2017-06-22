@@ -40,7 +40,6 @@ class App extends React.Component {
                     <SearchBar />
                 </header>
                 <main className="main-content">
-                    {this.props.children}
                     {React.cloneElement(this.props.children, { user: this.state.user })}
                 </main>
                 <footer className="main-footer orange-stylized">
@@ -50,5 +49,7 @@ class App extends React.Component {
         );
     }
 };
+
+//{this.props.children}
 
 export default App;
