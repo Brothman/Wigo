@@ -26,7 +26,14 @@
 
 @media all and (max-width: 415px) {
   .search-restaurant-container{
+    max-height: none;
+    overflow-y: hidden;
+    }
+}
 
+@media all and (max-width: 1025px) {
+  .search-restaurant-container{
+    max-height: none;
   }
 }
 .search-text {
@@ -34,6 +41,11 @@
   font-family: 'Raleway';
 }
 
+@media all and (max-width: 415px) {
+  .search-text{
+    margin-bottom: auto;
+  }
+}
 .search-text-header {
   color: #E7CC8F;
   font-size: 38px;
@@ -58,6 +70,7 @@
   .search-text-container{
     margin-left: 5px;
     margin-right: 5px;
+    overflow: auto;
   }
 }
 .search-image-info-container {
@@ -72,7 +85,8 @@
 @media all and (max-width: 415px) {
   .search-image-info-container{
     margin-top: 0px;
-    min-height: 190px;
+    min-height: 200px;
+
   }
 }
 .search-image-container {
