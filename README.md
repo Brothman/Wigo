@@ -2,3 +2,8 @@ Welcome to Wigo! Cape Town's youngest and loveliest search engine, you're guaran
 
 
 Hello my friends.
+
+To run:
+
+$ npm install
+$ npm start
