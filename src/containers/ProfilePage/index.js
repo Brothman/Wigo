@@ -12,6 +12,9 @@ class ProfilePage  extends React.Component {
     console.log('this is the user', user);
     return (
       <div className='profile-container'>
+        <div className='profile-header'>
+          <h2>id page</h2>
+        </div>
         <div className ='profile-logo-container'>
           <Logo />
         </div>
@@ -20,7 +23,6 @@ class ProfilePage  extends React.Component {
         </div>
         <div className='user-info-container'>
           <h2>{user.displayName}</h2>
-          <h2> Wigo </h2>
         </div>
       </div>
     )
