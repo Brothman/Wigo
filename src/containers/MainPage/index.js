@@ -106,14 +106,12 @@ logoutUserClient = () => {
       <div className='total-container'>
         <div className="body-container">
            <div className="body">
-             <ImageDatabase />             
+             <ImageDatabase />
              <ImageGalleryHolder />
              <ImageDatabase2 />
            </div>
         </div>
           <AboutUs />
-        <button onClick={this.requireAuth}> Hello </button>
-      <button onClick={this.profilePageSwitch}> Profile </button>
       </div>
       )
 
