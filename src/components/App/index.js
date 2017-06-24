@@ -4,6 +4,8 @@ import SearchBar from '../SearchBar';
 import FireBaseTools from '../../utils/firebase'
 import Logo from '../Logo/index';
 import ProfileLogo from '../ProfileLogo'
+
+import {browserHistory} from 'react-router';
 import './index.css';
 /*
 This is the layout component. It's displayed by the top-level Route
@@ -31,8 +33,14 @@ class App extends React.Component {
       })
     })
     .catch((e) => {
-      FireBaseTools.logoutUser()
+      FireBaseTools.logoutUser();
+      browserHistory.push('/');
     })
+  }
+
+  logoutTest() {
+     FireBaseTools.logoutUser();
+     browserHistory.push('/');
   }
 
     render() {
@@ -49,6 +57,7 @@ class App extends React.Component {
                 </main>
                 <footer className="main-footer orange-stylized">
                   <h1 className="footer-1"> All the places you'll go with Wigo. </h1>
+                <button onClick={this.logoutTest}> logout </button>
                 </footer>
             </div>
         );

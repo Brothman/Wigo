@@ -92,6 +92,9 @@ class RestaurantDatabase extends React.Component {
     this.searchAlorithimStateChange(this.state.ThrillArray, searchTerm);
     this.searchAlorithimStateChange(this.state.DiscountsArray, searchTerm);
     this.shuffleArray();
+    if (this.state.resultArray == 0) {
+      this.setState({resultArray: [badSearch]})
+    }
   }
 
 /*  addDatabaseInformation = () => {
@@ -106,6 +109,7 @@ class RestaurantDatabase extends React.Component {
   componentWillMount = () => {
     this.setState ({resultArray: []}, () => {
       this.searchAlgorithim(this.props.params.searchQuery)})
+
   }
 
 

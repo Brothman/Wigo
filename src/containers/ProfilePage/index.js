@@ -7,6 +7,7 @@ import Image from '../../components/Images';
 class ProfilePage  extends React.Component {
 
   render () {
+    console.log('user-info',this.props.user)
     return (
       <div className='profile-container'>
         <div className='profile-header'>

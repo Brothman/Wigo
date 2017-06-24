@@ -1,5 +1,8 @@
 .land-body-container {
   height: 418px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .land-{
