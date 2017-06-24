@@ -25,6 +25,8 @@ class App extends React.Component {
     }
   }
 
+//honestly irrelevant now -- the problem with profiles not showing up
+//was caused because App does need to re-render since it's a parent component
   componentDidMount() {
     FireBaseTools.fetchUser()
     .then((user) => {
@@ -37,6 +39,8 @@ class App extends React.Component {
       browserHistory.push('/');
     })
   }
+
+
 
   logoutTest() {
      FireBaseTools.logoutUser();
@@ -57,13 +61,14 @@ class App extends React.Component {
                 </main>
                 <footer className="main-footer orange-stylized">
                   <h1 className="footer-1"> All the places you'll go with Wigo. </h1>
-                <button onClick={this.logoutTest}> logout </button>
                 </footer>
             </div>
         );
     }
 };
 
+//Logout Button Here if I want it:
+//<button onClick={this.logoutTest}> logout </button>
 //{this.props.children}
 
 export default App;
