@@ -83,6 +83,22 @@
   right: 0;
 }
 
+/* .main-footer {
+  height: calc(100vh - 654px);
+} */
+
+@media all and (min-width: 1068px) {
+  .main-footer {
+    height: calc(100vh - 614px);
+  }
+}
+
+@media all and (max-width: 741px) and (min-width: 608px) {
+  .main-footer {
+    height: calc(100vh - 732px);
+  }
+}
+
 @media all and (max-width:415px) {
   .hello-butt, .profile-butt{
     height: 50px;

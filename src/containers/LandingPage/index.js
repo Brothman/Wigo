@@ -16,7 +16,8 @@ class LandingPage extends React.Component {
   }
 
   requireAuth = () => {
-    var user = firebaseApp.auth().currentUser;
+    // var user = firebaseApp.auth().currentUser;
+    var user = window.localStorage.currentUser;
 
        if (user) {
                    alert('logged in');

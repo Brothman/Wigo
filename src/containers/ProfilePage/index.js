@@ -29,6 +29,7 @@ class ProfilePage  extends React.Component {
   }
 
   render () {
+    debugger
     //console.log('user-info',this.state.user)
     return (
       <div className='profile-container'>
@@ -36,7 +37,7 @@ class ProfilePage  extends React.Component {
           <h2>id page</h2>
         </div>
         <div className='profile-image-container'>
-          {this.state.user ? <Image source={this.state.user.photoURL} /> : null }
+          {this.state.user.providerData ? <Image source={`${this.state.user.providerData[0].photoURL}?width=400` } /> : null }
         </div>
         <div className='user-info-container'>
           {this.state.user ? <h2>{this.state.user.displayName}</h2>: null}
