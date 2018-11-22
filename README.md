@@ -10,3 +10,11 @@ npm start
 
 # To access:
 http://wigo.surge.sh
+
+# Credits
+
+This software uses code from several open source packages, including the following:
+
+* [React](https://github.com/facebook/react)
+
+* [Create-React-App](https://github.com/facebook/create-react-app)
